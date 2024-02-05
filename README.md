@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module. Introduce the lab. What will the students build in this lab?
+Students will build an interactive roster-creation app that manages selections in state and performs data aggregation and display.
 
 ## Prerequisites
 
