@@ -1,17 +1,45 @@
 # ![React State Management - Exercise](./assets/hero.png)
 
-In this exercise, we give students an array of objects that are initialized in state. The user must select options from this array to assemble the best roster/combination of the items as possible.
+Welcome to the React State Management Lab! We are going to be interacting with state to get a better understanding of how to manage it in a React application. For this app we are going to assemble a team of character to survie the zombie apocalypse. We are going to do the following:
 
-The array of objects will have various properties, most notably a PRICE attribute. 
+- Add characters to the team from a given list
+- Remove characters from the team
+- Display the total cost of the team
+- Display the total strength of the team
+- Display the total agility of the team
 
-The goal is creating a roster management app that challenges the user to select from the list of characters to create their dream roster for a specific scenario, in the vein of "You have $100 to assemble a team to survive a zombie apocalypse. Who do you choose?" and the objects are something like:
+Let's get into it!
 
-{ name: "Roman Legionary", price: 10, strength: 5, agility: 1, img: 'url-link-toimage'}
+## Exercise
 
-The list you can select from remains static, and each item has a clickListener for the user selecting that character for their team.
+Follow the steps below to complete the exercise. Keep all this code in a single file for now. You can refactor it into separate components later.
 
-Then, state also contains the list of characters they've selected. When the user clicks one of the characters images, it gets added to their list in state and displayed. The list you're assembling should also have DELETE/REMOVE button to allow them to change their mind about options.
+1. Create a new state variable named `team` and set the initial state to an empty arrary.
+2. Create a new state variable named `money` and set the initial state to 100.
+3. Create a new state variable named `zombieFighters` and set the initial state to the following array of objects:
 
-Ultimately, the list they create gets data aggregated, in particular the cost (the goal is assembling the best team for under $100). You can display the total price in red if it's over $100 and green if they're still under budget. The display can also aggregate the average or total of various other statistics the characters have like "average strength" or "total agility" or what not.
+```js
+[
+    { name: "Survivor", price: 12, strength: 6, agility: 4, img: 'https://via.placeholder.com/150/92c952' },
+    { name: "Scavenger", price: 10, strength: 5, agility: 5, img: 'https://via.placeholder.com/150/771796' },
+    { name: "Shadow", price: 18, strength: 7, agility: 8, img: 'https://via.placeholder.com/150/24f355' },
+    { name: "Tracker", price: 14, strength: 7, agility: 6, img: 'https://via.placeholder.com/150/d32776' },
+    { name: "Sharpshooter", price: 20, strength: 6, agility: 8, img: 'https://via.placeholder.com/150/1ee8a4' },
+    { name: "Medic", price: 15, strength: 5, agility: 7, img: 'https://via.placeholder.com/150/66b7d2' },
+    { name: "Engineer", price: 16, strength: 6, agility: 5, img: 'https://via.placeholder.com/150/56acb2' },
+    { name: "Brawler", price: 11, strength: 8, agility: 3, img: 'https://via.placeholder.com/150/8985dc' },
+    { name: "Infiltrator", price: 17, strength: 5, agility: 9, img: 'https://via.placeholder.com/150/392537' },
+    { name: "Leader", price: 22, strength: 7, agility: 6, img: 'https://via.placeholder.com/150/602b9e' }
+]
+```
 
-The generic version of this app should provide an array of objects for students to pull from as their start. A level up challenge can have them either add new characters or generate their own differently flavored version of the app.
+4. Display the `zombieFighters` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have a button to add them to the team.
+5. If the `team` array length is greater than 0, display the `team` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have a button to remove them from the team.
+6. If the `team` array length is less than 0, display `Pick some team members!` in the UI.
+7. Display the current `money` in the UI.
+8. Display the total strength of the team in the UI. If there are no team members display `Total Strength: 0`.
+9. Display the total agility of the team in the UI. If there are no team members display `Total Agility: 0`.
+10. Create a function named `handleAddFighter`. This function should take in a character object and add them to the `team` array. This function should also subtract the character's price from the `money` state.
+11. Create a function named `handleRemoveFighter`. This function should take in a character object and remove them from the `team` array. This function should also add the character's price to the `money` state.
+
+> 💡 Hint: You should never change state directly. If you need to make a copy of an array you can use the syntax `const copyArray = [...sourceArray]`.

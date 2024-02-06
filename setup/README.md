@@ -1,40 +1,66 @@
-# ![[tktk Module Name] - Setup](./assets/hero.png)
+# ![React State Management Lab - Setup](./assets/hero.png)
 
 ## Setup
 
-Open your Terminal application and navigate to your `~/code/ga/labs` directory:
-
 ```bash
-cd ~/code/ga/labs
+npm create vite@latest
 ```
 
-<!-- tktk if starter code exists -->
+You'll be prompted to provide a project name. `vite-project` is the default but when you start typing that default will go away. Choose a name that makes sense for this project; in this case, we'll call the app `react-state-management-lab`.
 
-Fork the [[tktk Repo Name]](https://git.generalassemb.ly/modular-curriculum-all-courses/[tktk Repo Name]) repository.
+Next, you'll select a framework. Use the arrow keys to choose the `React` option, and hit `Enter`.
 
-<!-- tktk if starting from scratch  -->
+Again, use the arrow keys to choose the `JavaScript` variant and hit `Enter`.
 
-Make a new repository on [GitHub](https://github.com/) named [tktk Repo Name].
-
-<!-- tktk -->
-
-Clone a copy of your remote repo locally by using the `git clone` command:
+Move into the project you just created and run `npm i` to install the dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/[tktk Repo Name].git [tktk Personal GitHub for new labs]
-git clone https://git.generalassemb.ly/<your-username>/[tktk Repo Name].git [tktk GA enterprise GitHub for starter code]
+cd react-state-management-lab
+npm i
 ```
 
-> 📚 Note: In the link above, where it says `<your-username>`, you should see the username from your GitHub account.
-
-Next, `cd` into your new cloned directory, `[tktk Repo Name]`:
-
-```bash
-cd [tktk Repo Name]
-```
-
-Open the project's folder in your code editor:
+Launch the app in VS Code:
 
 ```bash
 code .
+```
+
+Open the `App.jsx` file in the `src` directory and replace the contents of it with the following:
+
+```jsx
+// src/App.jsx
+
+const App = () => {
+
+  return (
+    <h1>Hello world!</h1>
+  );
+}
+
+export default App
+```
+
+Clear out the contents of the `index.css` and `App.css` file in the `src` directory. Add the following CSS to the `App.css` file:
+
+```css
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+}
+```
+
+To start the app, run:
+
+```bash
+npm run dev
 ```
