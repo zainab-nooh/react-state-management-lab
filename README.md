@@ -10,7 +10,7 @@ Students will build an interactive roster-creation app that manages selections i
 
 ## Time to complete
 
-Estimated time to complete core lab exercise: **tktk min**
+Estimated time to complete core lab exercise: **60 min**
 
 ## Content
 
@@ -19,7 +19,7 @@ Estimated time to complete core lab exercise: **tktk min**
 
 ## Solution code
 
-🏁 [tktk Solution code](#tktk-external-repo-link-url)
+🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab-solution)
 
 ## Deployed sites
 

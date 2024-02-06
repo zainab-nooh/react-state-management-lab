@@ -33,13 +33,22 @@ Follow the steps below to complete the exercise. Keep all this code in a single 
 ]
 ```
 
-4. Display the `zombieFighters` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have a button to add them to the team.
-5. If the `team` array length is greater than 0, display the `team` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have a button to remove them from the team.
+4. Display the `zombieFighters` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have an "Add" button to add them to the team.
+5. If the `team` array length is greater than 0, display the `team` array in the UI. Each character should have an image, name, price, strength, and agility. Each character should also have a "Remove" button to remove them from the team.
 6. If the `team` array length is less than 0, display `Pick some team members!` in the UI.
 7. Display the current `money` in the UI.
 8. Display the total strength of the team in the UI. If there are no team members display `Total Strength: 0`.
 9. Display the total agility of the team in the UI. If there are no team members display `Total Agility: 0`.
-10. Create a function named `handleAddFighter`. This function should take in a character object and add them to the `team` array. This function should also subtract the character's price from the `money` state.
-11. Create a function named `handleRemoveFighter`. This function should take in a character object and remove them from the `team` array. This function should also add the character's price to the `money` state.
+10. Create a function named `handleAddFighter`. This function should accomplish the following:
+    1. On click of the "Add" button, add the character object to the `team` state array.
+    2. Subtract the character's price from the `money` state variable.
+    3. If you do not have enough `money` left to buy a character you should not be able to add the character. Log to the console ` Not enough money`.
+11. Create a function named `handleRemoveFighter`. This function should accomplish the following:
+    1. On click of the "Remove" button, remove the character object from the `team` state array.
+    2. Add the character's price to the `money` state variable.
 
-> 💡 Hint: You should never change state directly. If you need to make a copy of an array you can use the syntax `const copyArray = [...sourceArray]`.
+## Hints
+
+- You should never change state directly. If you need to make a copy of an array you can use the syntax `const copyArray = [...sourceArray]`.
+- You can use the `reduce` method to get the total strength and agility of the team.
+- You can use `https://jsonplaceholder.typicode.com/photos` to get images for the characters. These are just random photos and don't have anything to do with the characters.
