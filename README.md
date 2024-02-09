@@ -21,13 +21,6 @@ Estimated time to complete core lab exercise: **60 min**
 
 🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab-solution)
 
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
 
