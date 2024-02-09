@@ -1,6 +1,6 @@
 # ![React State Management - Exercise](./assets/hero.png)
 
-Welcome to the React State Management Lab! We are going to be interacting with state to get a better understanding of how to manage it in a React application. For this app we are going to assemble a team of character to survie the zombie apocalypse. We are going to do the following:
+Welcome to the React State Management Lab! We are going to be interacting with state to get a better understanding of how to manage it in a React application. For this app we are going to assemble a team of character to survive the zombie apocalypse. We will do the following:
 
 - Add characters to the team from a given list
 - Remove characters from the team
@@ -14,7 +14,7 @@ Let's get into it!
 
 Follow the steps below to complete the exercise. Keep all this code in a single file for now. You can refactor it into separate components later.
 
-1. Create a new state variable named `team` and set the initial state to an empty arrary.
+1. Create a new state variable named `team` and set the initial state to an empty array.
 2. Create a new state variable named `money` and set the initial state to 100.
 3. Create a new state variable named `zombieFighters` and set the initial state to the following array of objects:
 
