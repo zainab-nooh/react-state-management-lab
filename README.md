@@ -1,4 +1,4 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![React State Management Lab](./assets/hero.png)
 
 ## About
 
