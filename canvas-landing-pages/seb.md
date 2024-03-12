@@ -1,1 +1,1 @@
-# ![React State Management Lab](./assets/hero.png)
+# ![React State Management Lab](../assets/hero.png)
