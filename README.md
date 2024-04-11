@@ -12,7 +12,7 @@ By adding and removing team members, tracking resources, and calculating team st
 
 ## Time to complete
 
-Estimated time to complete core lab exercise: **60 min**
+Estimated time to complete core lab exercise: **120 min**
 
 ## Content
 
