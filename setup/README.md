@@ -67,20 +67,15 @@ const App = () => {
 export default App
 ```
 
-Clear out the contents of the `index.css` and `App.css` file in the `src` directory. Add the following CSS to the `App.css` file:
+Clear out the contents of the `App.css` file in the `src` directory. Add the following CSS to the `App.css` file:
 
 ```css
 ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   list-style: none;
   margin: 10px;
 }
