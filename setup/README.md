@@ -78,6 +78,10 @@ export default App
 Clear out the contents of the `App.css` file in the `src` directory. Add the following CSS to the `App.css` file:
 
 ```css
+#root {
+  margin: 16px;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +93,6 @@ li {
   padding: 8px;
   border: whitesmoke 3px solid;
   border-radius: 8px;
-  min-width: 170px;
 }
 ```
 

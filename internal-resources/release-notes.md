@@ -22,6 +22,7 @@ None.
 - Update to use internal template version 2.
 - Adjust instructions so we don't encourage students to implement for `totalStrength` and `totalAgility` as state variables. These can be calculated from the `team` data already held in  state and creating new state variables to hold this data is a React anti-pattern we should avoid.
 - Use locally-served assets instead of a third party.
+- Clarify exercise requirements.
 
 #### Removals
 

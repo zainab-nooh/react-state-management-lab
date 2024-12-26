@@ -77,7 +77,7 @@ Follow these steps to complete the exercise. Keep all your code in the `App.jsx`
        price: 16,
        strength: 6,
        agility: 5,
-       img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e',
+       img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png',
      },
      {
        id: 8,
